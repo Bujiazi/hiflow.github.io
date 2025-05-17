@@ -139,7 +139,7 @@
   
   <div class="content">
     <h2 style="text-align:center;"><b>Abstract</b></h2>
-    <p>Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. Recent approaches have investigated training-free strategies to enable high-resolution image synthesis with pre-trained models. However, these techniques often struggle with generating high-quality visuals and tend to exhibit artifacts or low-fidelity details, as they typically rely solely on the endpoint of the low-resolution sampling trajectory while neglecting intermediate states that are critical for preserving structure and synthesizing finer detail. To this end, we present HiFlow, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging such flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's capability in achieving superior high-resolution image quality over state-of-the-art methods.</p>
+    <p>Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. Recent approaches have investigated training-free strategies to enable high-resolution image synthesis with pre-trained models. However, these techniques often struggle with generating high-quality visuals and tend to exhibit artifacts or low-fidelity details, as they typically rely solely on the endpoint of the low-resolution sampling trajectory while neglecting intermediate states that are critical for preserving structure and synthesizing finer detail. To this end, we present HiFlow, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging such flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's capability in achieving superior high-resolution image quality over state-of-the-art methods. Our code is available at <a href="https://github.com/Bujiazi/HiFlow">HiFlow Repo</a>.</p>
   </div>
   
   
@@ -150,14 +150,6 @@
     <img width="960" src="./FreeScale_files/figs/fig_framework.png">
     </div>
   </div>
-  
-  <!-- <div class="content">
-    <h2><b>Zoomed in Details</b></h2>
-    <p>FreeScale may regenerate the original blurred areas at low resolution based on the prior knowledge that the model has learned. As shown in the bottom row, two originally chaotic and blurry faces are clearly outlined at 8k resolution.</p>
-    <div style="text-align: center;">
-    <img width="960" src="./FreeScale_files/figs/fig_diff8k.png">
-    </div>
-  </div> -->
   
   <div class="content">
     <h2><b>Qualitative Comparison</b></h2>
