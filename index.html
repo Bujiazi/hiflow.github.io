@@ -135,61 +135,11 @@
 
   <br>
   
-  <!-- <div id="carousel" class="carousel carousel-vid" style="overflow: hidden; margin-top: 0px; font-weight: bold; font-size: 1.2em">
-    <div class="vid-txt">
-      <p>Impressionist style, a yellow rubber duck floating on the wave on the sunset.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/1.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="vid-txt">
-      <p>Iron Man surfing on the sea.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/2.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="vid-txt">
-      <p>A camel walking in a desert landscape.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/3.mp4" type="video/mp4">
-      </video>
-    </div>  
-    <div class="vid-txt">
-      <p>Flying through an intense battle between pirate ships in a stormy ocean.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/4.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="vid-txt">
-      <p>A corgi running on the grassland on the grassland.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/5.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="vid-txt">
-      <p>A lion is swimming.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/6.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="vid-txt">
-      <p>Campfire at night in a snowy forest with starry sky in the background.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/7.mp4" type="video/mp4">
-      </video>
-    </div>
-    <div class="vid-txt">
-      <p>A panda walking and munching bamboo in a bamboo forest.</p>
-      <video autoplay muted loop playsinline controls dth="1024px">
-        <source src="./FreeScale_files/vids/8.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div> -->
   
   
   <div class="content">
     <h2 style="text-align:center;"><b>Abstract</b></h2>
-    <p>Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. To this end, we present <b>HiFlow</b>, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging this flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's superiority in achieving superior high-resolution image quality over current state-of-the-art methods.</p>
+    <p>Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. Recent approaches have investigated training-free strategies to enable high-resolution image synthesis with pre-trained models. However, these techniques often struggle with generating high-quality visuals and tend to exhibit artifacts or low-fidelity details, as they typically rely solely on the endpoint of the low-resolution sampling trajectory while neglecting intermediate states that are critical for preserving structure and synthesizing finer detail. To this end, we present HiFlow, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging such flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's capability in achieving superior high-resolution image quality over state-of-the-art methods.</p>
   </div>
   
   
@@ -216,7 +166,7 @@
     <img width="960" src="./FreeScale_files/figs/fig_img_compare.png">
     </div>
     <br>
-    <p>Image qualitative comparisons with training-based methods. HiFlow demonstrates the capability to generate high-resolution images with quality comparable to leading training-based models (UltraPixel, DALL·E 3, and Flux-Pro).</p>
+    <p>Image qualitative comparisons with training-based methods. HiFlow demonstrates the capability to generate high-resolution images with quality comparable to leading training-based models (UltraPixel, Diffusion-4K).</p>
     <div style="text-align: center;">
     <img width="960" src="./FreeScale_files/figs/fig_train_compare.png">
     </div>
